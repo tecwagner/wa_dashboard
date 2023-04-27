@@ -1,8 +1,8 @@
+/* eslint-disable react/no-children-prop */
 import Layout from '@/components/Layout';
-import Products from './products';
 
-const UsersList = (props: any) => {
-	return <Layout />;
+const UsersList: React.FunctionComponent = () => {
+	return <Layout children={undefined} />;
 };
 
 export default UsersList;

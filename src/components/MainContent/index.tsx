@@ -1,6 +1,10 @@
 import classes from './MainContent.module.scss';
 
-const MainContent: React.FunctionComponent = (props: any) => {
+interface MainContentProps {
+	children: React.ReactNode;
+}
+
+const MainContent: React.FunctionComponent<MainContentProps> = (props) => {
 	return (
 		<main className={classes.main}>
 			<div className="container">{props.children}</div>

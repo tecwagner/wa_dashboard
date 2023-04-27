@@ -2,7 +2,11 @@ import Footer from '../Footer';
 import Main from '../MainContent';
 import NavBar from '../NavBar';
 
-const Layout: React.FunctionComponent = (props: any) => {
+interface LayoutProps {
+	children: React.ReactNode;
+}
+
+const Layout: React.FunctionComponent<LayoutProps> = (props) => {
 	return (
 		<>
 			<NavBar />
