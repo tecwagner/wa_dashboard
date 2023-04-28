@@ -25,11 +25,11 @@ export const NavBar: React.FunctionComponent = (props) => {
 								Grupo de Produtos
 							</Link>
 						</li>
-						<li className="nav-item">
+						{/* <li className="nav-item">
 							<Link className="nav-link" href="/orders">
 								Vendas
 							</Link>
-						</li>
+						</li> */}
 						<li className="nav-item">
 							<Link className="nav-link" href="/users">
 								Usuários
