@@ -5,6 +5,7 @@ interface MainContentProps {
 }
 
 const MainContent: React.FunctionComponent<MainContentProps> = (props) => {
+	
 	return (
 		<main className={classes.main}>
 			<div className="container">{props.children}</div>
