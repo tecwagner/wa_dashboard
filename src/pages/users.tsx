@@ -1,5 +1,5 @@
-import Layout from '@/components/Layout';
-import Title from '@/components/Title';
+import Layout from '@/components/layout';
+import Title from '@/components/title';
 import React from 'react';
 
 const Users: React.FunctionComponent = (props) => {
