@@ -1,6 +1,6 @@
 import classes from './Footer.module.scss';
 
-const Footer: React.FunctionComponent = (props) => {
+export default function Footer() {
 	return (
 		<footer className={classes.footer}>
 			Copyright &copy; {new Date().getFullYear()}
@@ -10,6 +10,4 @@ const Footer: React.FunctionComponent = (props) => {
 			.
 		</footer>
 	);
-};
-
-export default Footer;
+}
