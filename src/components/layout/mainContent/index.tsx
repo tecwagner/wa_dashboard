@@ -4,13 +4,10 @@ interface MainContentProps {
 	children: React.ReactNode;
 }
 
-const MainContent: React.FunctionComponent<MainContentProps> = (props) => {
-	
+export default function MainContent(props: MainContentProps) {
 	return (
 		<main className={classes.main}>
 			<div className="container">{props.children}</div>
 		</main>
 	);
-};
-
-export default MainContent;
+}
