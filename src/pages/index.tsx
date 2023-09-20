@@ -1,8 +1,5 @@
-/* eslint-disable react/no-children-prop */
-import Layout from '@/components/Layout';
+import Landing from '../components/landing';
 
-const UsersList: React.FunctionComponent = () => {
-	return <Layout children={undefined} />;
-};
-
-export default UsersList;
+export default function Home() {
+	return <Landing />;
+}
