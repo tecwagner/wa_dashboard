@@ -3,7 +3,7 @@ import Id from '../logic/core/comum/id.random/Id';
 
 export default {
 	id: Id.novo(),
-	name: 'João da Silva',
-	email: 'joaosiva@gmail.com',
+	name: 'Igor Faleiros',
+	email: 'igor.faleiros@gmail.com',
 	imagemUrl: null,
 } as IUsuario;
