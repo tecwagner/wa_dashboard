@@ -27,7 +27,8 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "src/data/logic/core/product-interface"
   ],
   "exclude": [
     "node_modules"
