@@ -4,6 +4,7 @@ import {IconTrendingDown, IconTrendingUp} from '@tabler/icons-react';
 
 interface IListProduct {
 	products: IProduct[];
+	selectProduct?: (product: IProduct) => void;
 }
 
 export default function List(props: IListProduct) {
@@ -28,7 +29,7 @@ export default function List(props: IListProduct) {
             flex items-center gap-3 p-3 cursor-pointer
             ${indice % 2 === 0 ? 'bg-zinc-900' : 'bg-zinc-800'}
             `}
-				onClick={() => {}}
+				onClick={() => props.selectProduct?.(product)}
 			>
 				{renderType(product)}
 				<span className="w-full md:w-1/2">{product.name}</span>
