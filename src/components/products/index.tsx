@@ -13,7 +13,6 @@ import Id from '@/src/data/logic/core/comum/id.random/Id';
 import {Autocomplete, Button} from '@mantine/core';
 import {IconForms, IconPlus, IconSearch} from '@tabler/icons-react';
 import TitlePage from '../template/TitlePage';
-import usuario from '@/src/data/constants/usuario.mock';
 
 export default function Products() {
 	const [initialProducts, setInitialProducts] =
