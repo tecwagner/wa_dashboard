@@ -26,17 +26,24 @@ export default function Forms(props: IFormsProps) {
 				<TextInput
 					label="Descrição"
 					value={data.description ?? ' N/A'}
+					onChange={changeAttributes('description')}
 				></TextInput>
-				<TextInput label="Estoque" value={data.quantity}></TextInput>
+				<TextInput
+					label="Estoque"
+					value={data.quantity}
+					onChange={changeAttributes('quantity')}
+				></TextInput>
 				<TextInput
 					label="Valor Venda"
 					value={Money.format(data.priceOrder) ?? ' N/A'}
+					onChange={changeAttributes('priceOrder', Money.desformat)}
 				></TextInput>
 				<TextInput
 					label="Valor Custo"
 					value={Money.format(data.priceCustom) ?? ' N/A'}
+					onChange={changeAttributes('priceCustom', Money.desformat)}
 				></TextInput>
-				<Radio.Group value={data.status}>
+				<Radio.Group value={data.status} onChange={changeAttributes('status')}>
 					<Group>
 						<Radio value={StatusType.ATIVO} label="Ativo" />
 						<Radio value={StatusType.INATIVO} label="Inativo" />
