@@ -1,5 +1,5 @@
 import Id from '../logic/core/comum/id.random/Id';
-import IProduct from '../logic/core/product-interface/Produto.Interface';
+import IProduct from '../logic/core/product-interface/Prodcut.Interface';
 import {StatusType} from '../logic/core/status-type/status.type';
 
 const productsMock: IProduct[] = [

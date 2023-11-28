@@ -1,4 +1,4 @@
-import IProduct from '@/src/data/logic/core/product-interface/Produto.Interface';
+import IProduct from '@/src/data/logic/core/product-interface/Prodcut.Interface';
 import Money from '@/src/data/logic/utils/Money';
 import {IconTrendingDown, IconTrendingUp} from '@tabler/icons-react';
 

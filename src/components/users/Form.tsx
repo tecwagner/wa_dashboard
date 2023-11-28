@@ -1,18 +1,18 @@
 import useStateForm from '@/src/data/hooks/useForm';
-import IProduct from '@/src/data/logic/core/product-interface/Prodcut.Interface';
 import {StatusType} from '@/src/data/logic/core/status-type/status.type';
-import Money from '@/src/data/logic/utils/Money';
+import IUser from '@/src/data/logic/core/user-interface/User.Interface';
+
 import {Button, Group, Radio, TextInput} from '@mantine/core';
 
 interface IFormsProps {
-	product: IProduct;
-	save: (product: IProduct) => void;
-	delete: (product: IProduct) => void;
+	usuario: IUser;
+	save: (usuario: IUser) => void;
+	delete: (usuario: IUser) => void;
 	cancel: () => void;
 }
 
 export default function Forms(props: IFormsProps) {
-	const {data, changeAttributes} = useStateForm<IProduct>(props.product);
+	const {data, changeAttributes} = useStateForm<IUser>(props.usuario);
 
 	return (
 		<div className="flex flex-col border border-zinc-700 rounded-xl overflow-hidden">
@@ -24,24 +24,19 @@ export default function Forms(props: IFormsProps) {
 					onChange={changeAttributes('name')}
 				></TextInput>
 				<TextInput
-					label="Descrição"
-					value={data.description ?? ' N/A'}
-					onChange={changeAttributes('description')}
+					label="E-mail"
+					value={data.email }
+					onChange={changeAttributes('email')}
 				></TextInput>
 				<TextInput
-					label="Estoque"
-					value={data.quantity}
-					onChange={changeAttributes('quantity')}
+					label="CPF/CNPJ"
+					value={data.document}
+					onChange={changeAttributes('document')}
 				></TextInput>
 				<TextInput
-					label="Valor Venda"
-					value={Money.format(data.priceOrder) ?? ' N/A'}
-					onChange={changeAttributes('priceOrder', Money.desformat)}
-				></TextInput>
-				<TextInput
-					label="Valor Custo"
-					value={Money.format(data.priceCustom) ?? ' N/A'}
-					onChange={changeAttributes('priceCustom', Money.desformat)}
+					label="TELEFONE"
+					value={data.telephone}
+					onChange={changeAttributes('telephone')}
 				></TextInput>
 				<Radio.Group value={data.status} onChange={changeAttributes('status')}>
 					<Group>
