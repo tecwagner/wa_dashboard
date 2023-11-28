@@ -6,7 +6,7 @@ import productsMock from '@/src/data/constants/product.mock';
 import List from './List';
 import IProduct, {
 	newProductInit,
-} from '@/src/data/logic/core/product-interface/Produto.Interface';
+} from '@/src/data/logic/core/product-interface/Prodcut.Interface';
 import Forms from './Form';
 import NotFound from '../template/NotFound';
 import Id from '@/src/data/logic/core/comum/id.random/Id';

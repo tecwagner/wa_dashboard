@@ -1,11 +1,11 @@
 // https://unicode-table.com/en/1F44B/
-import usuario from '@/src/data/constants/usuario.mock';
+import userRoot from '@/src/data/constants/userRoot.mock';
 
 export default function Welcome() {
 	function renderizarNome() {
 		return (
 			<span className="hidden sm:inline-block">
-				{usuario?.name?.split(' ')[0]}
+				{userRoot?.name?.split(' ')[0]}
 			</span>
 		);
 	}
